@@ -28,7 +28,7 @@
 
     if($conexao->query($query) === TRUE){
 
-      echo "Cadastrado com sucesso!";
+      echo "<p> Cadastrado com sucesso!</p>";
 
     }else{
       echo "Erro: " . mysql_error();
