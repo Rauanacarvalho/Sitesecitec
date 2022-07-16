@@ -1,0 +1,147 @@
+
+*{
+	margin: 10; padding: 0;
+	font-family: "Garamond", Garamond, serif;
+
+}
+
+body {
+  background-color: #e6ffcc;
+}
+
+.h1 {
+	color: black;
+	text-align: center;
+	margin-right: 46%;
+	font-family: "Garamond", Garamond, serif;
+}
+
+.h2 {
+	text-align: center;
+	text-orientation: center;
+	color: black;
+	font-size: 40px;
+	align-items: center;
+}
+
+.container {
+  margin: auto;
+  background: none;
+  width: 66%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  margin-left: 24%;
+   align-items: center;
+   margin-top: 66%;
+}		
+
+.box {
+width: 35%;
+background: white;
+align-items: center;
+align-self: center;
+margin-top: 10%;
+position: fixed;
+}
+
+
+.box2 {
+margin-left: 40%;
+width: 25%;
+min-height: 90%;
+background: white;
+align-items: right;
+align-self: right;
+}
+
+.atv {
+	font-size: 20px;
+}
+
+.cadastrobutton {
+	align-items: center;
+	margin: auto;
+	min-width: 30%;
+	background-color: white;
+	border-color: #ccff66;
+}
+
+.login1 {
+	align-items: right;
+	margin-left: 66%;
+	border: none;
+	background-color: transparent;
+}
+
+.entrabotao {
+	align-items: center;
+	margin: auto;
+	width: 89%;
+	border-color: #ccff66;
+	background-color: white;
+}
+
+.cadastro2 {
+	align-items: right;
+	margin-left: 66%;
+	border: none;
+	background-color: transparent;
+}
+
+.logo {
+    clear: both;
+    margin-top: 0%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+img {
+    align-content: top;
+    align-self: left;
+    align-content: left;
+    width: 100px;
+    height: 50px;
+}
+
+.menu {
+list-style:none;
+border:none;
+float:right;
+}
+
+.menu li{
+position:relative;
+float:right;
+border:none;
+}
+
+.menu li a{color:black; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:#c5fa8e;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #eeffcc;
+-webkit-box-shadow:0 3px 10px 0 #eeffcc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.programacao {
+list-style:none;
+float:left;
+}
+
+.programacao li{
+position:relative;
+float:left;
+}
+
+.programacao li a{ 
+	color:black; 
+	text-decoration:none;
+	padding:5px 10px;
+	background-color: white;
+}
