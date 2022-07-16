@@ -38,5 +38,10 @@
 
   ?>
 
+    <form class="butaologin" method="post" action="login.html">
+    <button class="login1" name="botao" >Login</button>
+    <p><button class="entrabotao" name="entrarb">Home</button></p>
+    </form>
+
 </body>
 </html>
