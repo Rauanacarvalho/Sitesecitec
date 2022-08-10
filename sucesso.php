@@ -3,19 +3,25 @@
   <title>PHP Test</title>
   <style>
     body {
-    background-color: #e6e6ff;
+    background-color: #e6ffcc;
     }
   </style>
 <body>
 
     <strong>Seu cadastro foi realizado com sucesso!</strong><br>
-    Nome: <?php echo $_POST["nome_pessoa"]; ?><br>
-    E-mail: <?php echo $_POST["email_pessoa"]; ?>
+    Nome: <?php echo $_POST["nome_participante"]; ?><br>
+    E-mail: <?php echo $_POST["email_participante"]; ?><br>
+    Telefone: <?php echo $_POST["telefone_participante"]; ?><br>
+    Data de nascimento: <?php echo $_POST["datanasc_participante"]; ?>
+    
+    
 
   <?php
 
-    $nome_pessoa = $_POST['nome_pessoa'];
-    $email_pessoa = $_POST['email_pessoa'];
+    $nome_participante = $_POST['nome_participante'];
+    $email_participante = $_POST['email_participante'];
+    $telefone_participante = $_POST['telefone_participante'];
+    $datanasc_participante = $_POST['datanasc_participante'];
     $conexao = new mysqli('localhost','ifpb','ifpb');
 
     if (!$conexao){
@@ -24,7 +30,7 @@
 
     $conexao->select_db("secitec");
 
-    $query = "INSERT INTO `secitec`.`participante`(`nome`,`email`) VALUES ('" . $nome_pessoa . "','" .  $email_pessoa . "');";
+    $query = "INSERT INTO `secitec`.`PARTICIPANTE`(`nome`,`email`,`telefone`,`datanasc`) VALUES ('" . $nome_participante . "','" .  $email_participante . "','" . $telefone_participante . "','" .  $datanasc_participante . "');";
 
     if($conexao->query($query) === TRUE){
 
