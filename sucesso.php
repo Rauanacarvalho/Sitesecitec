@@ -22,6 +22,8 @@
     $email_participante = $_POST['email_participante'];
     $telefone_participante = $_POST['telefone_participante'];
     $datanasc_participante = $_POST['datanasc_participante'];
+    $usuario_participante = $_POST['usuario_participante'];
+    $senha_participante = password_hash($_POST['usuario_participante'], PASSWORD_DEFAULT);
     $conexao = new mysqli('localhost','ifpb','ifpb');
 
     if (!$conexao){
